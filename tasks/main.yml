@@ -1,6 +1,6 @@
 ---
 - name: Ensure ufw is installed.
-  apt: name=ufw state=installed
+  apt: name=ufw state=present
 
 - name: Ensure ufw is started and enabled to start at boot.
   service: name=ufw state=started enabled=yes
